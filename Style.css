@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /*@import url('https://www.tamiltypingonline.com/wp-content/uploads/2019/12/vanavil-avvaiyar.zip');*/
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------------*/
+        /*@font-face {
+            font-family: avvai;
+            src: url(Fonts/vanavil\ Avvaiyar.TTF);
+        }*/
+        body{
+          background-color: #ebecf5;
+        }
+        .TITLEBOX{
+            z-index: -99;
+            width: 100%;
+            height: 42.5vw;
+            background-image: url('Images/1920x1080_test.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover; /* Always size the image to the width of the div */
+            background-position: center; /* Position the image to the top center of the div */
+            padding-right: 5vw;
+            clear: both;
+        }
+        /* For any viewports less than 1000px wide */
+        .TITLE{
+            display: inline;
+            float: right;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0 0 .5vw #00000050;/* DO NOT REMOVE THIS, (FOR READABILITY)*/
+            font-size: 10vw;
+            margin-top: 13.5vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .LANDING_BOX{
+            width: 100%;
+            min-height: 10vw;
+            margin: auto;
+            clear: both;
+            background-color: #1e90ff50;
+            background-image: url('Images/1920X1080\ TEST/0001-0353.gif');
+            background-size: 50%;
+        }
+        .BOX{
+          width: 100%;
+          height: fit-content;
+          margin: auto;
+          clear: both;
+          background-color: #ebecf5;
+      }
+
+
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22.5px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: calibri;
+  z-index: 1;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transition: .2s;
+  background-color: #1e90ff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1e90ff;
+  color: #ffffff;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.lines__wrapper {
+	display: grid;
+	place-items: center;
+}
+
+.line {
+	overflow: hidden;
+}
+
+.line .line--text {
+	display: block;
+	color: #fff;
+	font-size: 3rem;
+	font-family: "Montserrat";
+	font-weight: 700;
+}
+
+.HALF_CONTENT_BOX{
+  width:50%;
+  height: fit-content;
+  box-shadow: 0px 0px 20px rgb(88, 88, 88);
+  padding: 2.5vw 2.5vw;
+  clear: both;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: auto;
+  overflow: hidden;
+  background-color: #ebecf5;
+}
+.HALF_CONTENT_BOX h1::before{
+  content: "• ";
+}
+.HALF_CONTENT_BOX p{
+  color: #444444;
+}
+
+.HALF_CONTENT_BOX h1{
+  margin-bottom: 2vw;
+}
+
+.CONTENT_BOX{
+  width:100%;
+  height: fit-content;
+  padding: 2.5vw 2.5vw;
+  clear: both;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: auto;
+  overflow: hidden;
+  background-color: #ebecf5;
+}
+
+.CONTENT_BOX p{
+  color: #444444;
+}
+
+.CONTENT_BOX h1::before{
+  content: "• ";
+}
+
+.CONTENT_BOX h1{
+  margin-bottom: 2vw;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.news{
+  height: 100%;
+  width: 25%;
+  background-color: #1e90ff;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #1e90ff;
+  text-shadow: none;
+  transition: .25s;
+}
+
+a:hover{
+  text-shadow: 0 0 30px#1e90ff;
+  transition: .25s;
+}

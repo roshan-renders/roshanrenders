@@ -1,0 +1,37 @@
+@media only screen and (max-width: 768px) {
+    .CONTENT_BOX{
+        width: 100%;
+        padding: 5vw 10vw;
+        text-align: justify;
+    }
+    .TITLEBOX{
+        padding: 5vw 20vw;
+        height: 50vw;
+    }
+    /*.LANDING_BOX{
+        height: 120vw;
+        background-size: 100%;
+    }*/
+    .HALF_CONTENT_BOX{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .line .line--text {
+        font-size: 4.25vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .TITLEBOX{
+        height: 75vw;
+    }
+    .line .line--text {
+        font-size: 6vw;
+    }
+    .TITLE{
+        transform-origin: center;
+        margin:auto;
+        margin-top: 25vw;
+    }
+}

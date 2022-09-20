@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="Responsive.css" media="screen"/>
+</head>
+
+<body>
+    <div class="topnav">
+        <span style="float: right;">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </span>
+    </div>
+    <div class="TITLEBOX">
+        <div class="TITLE">
+            <div class="lines__wrapper">
+                <div class="lines">
+                    <p class="line">
+                        <span class="line--text">V.R Silambam</span>
+                    </p>
+
+                    <p class="line">
+                        <span class="line--text">Sports Academy</span>
+                    </p>
+
+                    <p class="line">
+                        <span class="line--text">Lorem Lorem Lorem.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="LANDING_BOX" style="box-shadow: 0px -20px 100px #000000;">
+        <div class="HALF_CONTENT_BOX">
+            <h1>About us</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ad perferendis cum, inventore impedit id
+                ut sed dignissimos obcaecati laboriosam repellat minima pariatur totam maxime. Neque repellat itaque
+                sint nisi fugit quis quo illo ad eveniet distinctio vel ratione, tempora pariatur similique recusandae
+                dignissimos ab, nostrum facilis qui nemo minima. Debitis quam laboriosam nam dolorem animi praesentium
+                exercitationem veritatis earum sed expedita itaque modi iusto quibusdam excepturi iure, totam nulla?
+                Cumque, sint laboriosam aspernatur neque ad tempora quos consequuntur, eum mollitia eos ipsa temporibus
+                autem tenetur accusamus rem nulla culpa ipsum illo non? Dolor totam, necessitatibus in animi et
+                sapiente.
+            </p>
+            <div style="color: #444444;margin-top:1vw;"><a href="About_Us.html">Learn More</a></div>
+        </div>
+    </div>
+    <div class="BOX">
+        <div class="CONTENT_BOX">
+            <h1>Schedules</h1>
+            <iframe src="Schedules.html" frameborder="0" style="width: 100%;height: 15vw;overflow-y: hidden;"></iframe>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+        const { gsap } = window;
+
+        const lineTl = gsap.timeline({
+            defaults: {
+                delay: .25,
+                duration: 1.5,
+                stagger: 0.125,
+                ease: "expo.out",
+            },
+            onStart: () => {
+                gsap.set("body", {
+                    autoAlpha: 1,
+                });
+            }
+        });
+        lineTl
+            .from(".line .line--text", {
+                yPercent: 150,
+                skewY: 6,
+            })
+            .to(".line .line--text", {
+                yPercent: 0,
+                skewY: 0,
+            });
+
+    </script>
+</body>
+
+</html>
